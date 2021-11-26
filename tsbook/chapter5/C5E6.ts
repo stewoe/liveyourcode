@@ -1,0 +1,16 @@
+function getSum(arr: Array<number>): number {  
+  let currentSum = arr[0];  
+
+  for(let index = 1; index < arr.length; index++) {          
+      currentSum = currentSum + arr[index];  
+  }  
+
+  return currentSum;  
+}  
+
+function getAvg(arr: Array<number>): number {  
+  return getSum(arr) / arr.length; 
+} 
+
+let numbers: Array<number> = [5, 2, 7, 23, 671, 84];  
+console.log(getAvg(numbers)); 
